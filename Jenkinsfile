@@ -19,7 +19,7 @@ pipelie{
             stage("Deploy on tomcat"){
             steps{
             
-            sh "scp /root/workspace/Test_job/target/studentapp-2.5-SNAPSHOT.war 13.233.251.156:/var/lib/tomcat/webapps"
+            sh "scp /root/workspace/Sample_job1/target/studentapp-2.5-SNAPSHOT.war 13.233.251.156:/var/lib/tomcat/webapps"
             }
             
             }
