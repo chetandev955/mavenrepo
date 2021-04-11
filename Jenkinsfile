@@ -1,7 +1,7 @@
 pipelie{
        agent any
        stages{
-             stage("Checkout"){  
+             stage('Checkout'){  
              
              steps{
              
@@ -9,17 +9,17 @@ pipelie{
               }
              
              }
-             stage("Build"){
+             stage('Build'){
              steps{
              
-             sh "mvn package"
+             sh 'mvn package'
              }
              
              }
-            stage("Deploy on tomcat"){
+            stage('Deploy on tomcat'){
             steps{
             
-            sh "scp /root/workspace/Sample_job1/target/studentapp-2.5-SNAPSHOT.war 13.233.251.156:/var/lib/tomcat/webapps"
+            sh 'scp /root/workspace/Sample_job1/target/studentapp-2.5-SNAPSHOT.war 13.233.251.156:/var/lib/tomcat/webapps'
             }
             
             }
